@@ -19,15 +19,18 @@ namespace KD2
 
             BibliotekosKnyga bk = new BibliotekosKnyga();
 
-            bk.skaitytojoID = 5;
+            bk.skaitytojoID = 45;
             bk.skaitytojoVardas = "Romanas";
             bk.knygosPavadinmas = "Brisiaus galas";
-            bk.paemimoData = new DateTime(2019, 12, 10);
+            bk.paemimoData = new DateTime(2019,12,10);
+            bk.grazinomoData = new DateTime(2019,12,18);
 
-            Console.WriteLine("Skaitytojo ID", bk.skaitytojoID);
-            Console.WriteLine("Skaitytojo Vardas", bk.skaitytojoVardas);
-            Console.WriteLine("Knygos pavadinimas", bk.knygosPavadinmas);
-            Console.WriteLine("Knyga dienu pas skaitytoja", dienuPasSkaitytoja);
+            Console.WriteLine("Skaitytojo ID - {0}", bk.skaitytojoID);
+            Console.WriteLine("Skaitytojo Vardas - {0}", bk.skaitytojoVardas);
+            Console.WriteLine("Knygos pavadinimas - {0}", bk.knygosPavadinmas);
+            Console.WriteLine("Knyga dienu pas skaitytoja  - {0:0}", (bk.grazinomoData - bk.paemimoData).TotalDays);
+
+            Console.ReadLine();
         }
 
     }

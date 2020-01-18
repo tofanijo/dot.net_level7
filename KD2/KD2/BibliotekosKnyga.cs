@@ -12,13 +12,8 @@ namespace KD2
         public string knygosPavadinmas;
         public string skaitytojoVardas;
         public DateTime paemimoData;
+        public DateTime grazinomoData;
         
-
-        
-
-        public int dienuPasSkaitytoja()
-        {
-            return (paemimoData - DateTime.Now);
-
         }
-}
+
+    }
